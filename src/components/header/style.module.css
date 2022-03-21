@@ -1,0 +1,25 @@
+.container {
+  grid-column: 1/1;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 65% 35%;
+  overflow-x: hidden;
+}
+.container div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+.container.dark {
+  box-shadow: 0px 4px 5px rgba(255, 255, 255, 0.5);
+}
+.container.light {
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 20px;
+  }
+}

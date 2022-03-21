@@ -1,0 +1,39 @@
+@keyframes load {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+.container {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container div {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container div div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #08ce06;
+  border-right: none;
+  animation-name: load;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.container.dark .box {
+  background: #323232;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+.container.light .box {
+  background: #e4e4e4;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,48 @@
+@keyframes click {
+  from {
+    background: #08ce06;
+  }
+  to {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+.container {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 7.5%;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 10px 0;
+}
+.box {
+  display: flex;
+  align-items: center;
+}
+.boxP {
+  display: flex;
+  margin: 10px;
+}
+.boxP div {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+.container.dark {
+  background: #323232;
+  color: #cdcdcd;
+}
+.container.light {
+  background: #e4e4e4;
+  color: #000;
+}
+.favorito {
+  font-size: 1.5rem;
+}
+.container:hover {
+  animation-name: click;
+  animation-duration: 0.5s;
+}

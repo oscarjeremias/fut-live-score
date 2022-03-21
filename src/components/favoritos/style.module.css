@@ -1,0 +1,12 @@
+@keyframes click {
+  from {
+    background: #08ce06;
+  }
+  to {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+.click:hover {
+  animation-name: click;
+  animation-duration: 0.5s;
+}

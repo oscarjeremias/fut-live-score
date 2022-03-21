@@ -1,0 +1,18 @@
+.container {
+  grid-column: 1/1;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    grid-column: 2/3;
+    padding: 60px;
+  }
+  .container.page {
+    grid-column: 1/1;
+    padding: 60px;
+  }
+}

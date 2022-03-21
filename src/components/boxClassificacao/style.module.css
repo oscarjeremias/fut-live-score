@@ -1,0 +1,42 @@
+.container table {
+  width: 100vw;
+  padding: 15px;
+}
+.container table tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.infoData.dark {
+  background: #2c2c2c;
+}
+.infoData.light {
+  background: #cdcdcd;
+}
+.container table tr:nth-child(1) th:nth-child(1) {
+  width: 40%;
+  text-align: left;
+}
+.container table tr:nth-child(1) th:nth-child(2) {
+  width: 20%;
+  text-align: center;
+}
+.container table tr:nth-child(1) th:nth-child(3) {
+  width: 20%;
+  text-align: center;
+}
+.container table tr:nth-child(1) th:nth-child(4) {
+  width: 20%;
+  text-align: center;
+}
+.liga {
+  margin: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+@media only screen and (min-width: 1024px) {
+  .container table {
+    width: 90vw;
+  }
+}

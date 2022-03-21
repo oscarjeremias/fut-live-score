@@ -1,0 +1,39 @@
+.container {
+  display: none;
+}
+.container.active {
+  grid-column: 1/1;
+  grid-row: 1/4;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  z-index: 99;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 90vh;
+  overflow: hidden;
+  padding: 15px;
+  transition: 0.5s;
+}
+.container.dark {
+  background: #222222;
+  color: #cdcdcd;
+}
+.container.light {
+  background: #fff;
+  color: #000;
+}
+.container div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    display: grid;
+    padding: 20px;
+    grid-template-rows: 7.5vh 80vh;
+  }
+}
